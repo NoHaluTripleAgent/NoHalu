@@ -1,0 +1,30 @@
+{
+    "name": "nhm/no-halu-model",
+    "description": "No-Halu Model (NHM) — triple-agent consensus architecture for hallucination reduction in LLMs.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["llm", "hallucination", "multi-agent", "consensus", "ai-safety", "verification"],
+    "require": {
+        "php": ">=8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "NHM\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "NHM\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "demo": "php demo/demo.php",
+        "test": "phpunit"
+    }
+}
